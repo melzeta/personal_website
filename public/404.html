@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      (function () {
+        var segments = window.location.pathname.split("/").filter(Boolean);
+        var repoName = segments[0];
+        var basePath = repoName ? "/" + repoName : "";
+        var routePath = segments.length > 1 ? "/" + segments.slice(1).join("/") : "/";
+        var nextUrl =
+          window.location.origin +
+          basePath +
+          "/?p=" +
+          encodeURIComponent(routePath) +
+          (window.location.search ? "&q=" + encodeURIComponent(window.location.search.slice(1)) : "") +
+          window.location.hash;
+
+        window.location.replace(nextUrl);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
