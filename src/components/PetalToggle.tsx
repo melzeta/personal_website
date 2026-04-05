@@ -26,7 +26,7 @@ export const PetalToggle: React.FC = () => {
       <span className="relative block w-6 h-6">
         <Flower2
           className="w-6 h-6"
-          style={{ color: 'var(--accent-primary)' }}
+          style={{ color: petalsEnabled ? 'var(--accent-primary)' : 'var(--text-primary)' }}
         />
         {!petalsEnabled && (
           <Slash
