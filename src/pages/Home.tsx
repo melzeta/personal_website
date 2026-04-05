@@ -10,6 +10,7 @@ export const Home: React.FC = () => {
   const navigate = useNavigate();
   const { playClick, playHover } = useSound();
   const { theme } = useTheme();
+  const profileImageSrc = '/profile_picture/profile.png';
 
   const handleNavigation = (path: string) => {
     playClick();
@@ -66,7 +67,15 @@ export const Home: React.FC = () => {
                 <span className="home-hero-title-top">Hi, I'm</span>
                 <span className="home-hero-title-bottom">
                   <span>{personalInfo.name}</span>
-                  <span className="home-hero-emoji">{personalInfo.emoji}</span>
+                  <span className="home-hero-profile-wrap">
+                    <span className="home-hero-profile-ring">
+                      <img
+                        src={profileImageSrc}
+                        alt={`${personalInfo.name} profile photo`}
+                        className="home-hero-profile-image"
+                      />
+                    </span>
+                  </span>
                 </span>
               </h1>
               
