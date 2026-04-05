@@ -10,7 +10,7 @@ export const Home: React.FC = () => {
   const navigate = useNavigate();
   const { playClick, playHover } = useSound();
   const { theme } = useTheme();
-  const profileImageSrc = '/profile_picture/profile.png';
+  const profileImageSrc = 'profile_picture/profile.png';
 
   const handleNavigation = (path: string) => {
     playClick();
@@ -60,24 +60,27 @@ export const Home: React.FC = () => {
         <div className="mb-8 lg:mb-6 relative">
           <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-6 lg:gap-8 items-stretch">
             <div className="text-center lg:text-left">
-              <h1 
-                className="mb-3 home-hero-title"
-                style={{ color: 'var(--text-primary)' }}
-              >
-                <span className="home-hero-title-top">Hi, I'm</span>
-                <span className="home-hero-title-bottom">
-                  <span>{personalInfo.name}</span>
-                  <span className="home-hero-profile-wrap">
-                    <span className="home-hero-profile-ring">
-                      <img
-                        src={profileImageSrc}
-                        alt={`${personalInfo.name} profile photo`}
-                        className="home-hero-profile-image"
-                      />
-                    </span>
+              <div className="home-hero-title-row mb-3">
+                <h1 
+                  className="home-hero-title"
+                  style={{ color: 'var(--text-primary)' }}
+                >
+                  <span className="home-hero-title-top">Hi, I'm</span>
+                  <span className="home-hero-title-bottom">
+                    <span>{personalInfo.name}</span>
+                  </span>
+                </h1>
+
+                <span className="home-hero-profile-wrap">
+                  <span className="home-hero-profile-ring">
+                    <img
+                      src={profileImageSrc}
+                      alt={`${personalInfo.name} profile photo`}
+                      className="home-hero-profile-image"
+                    />
                   </span>
                 </span>
-              </h1>
+              </div>
               
               <h2 
                 className="mb-4 home-hero-subtitle"
