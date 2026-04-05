@@ -73,10 +73,7 @@ export const Home: React.FC = () => {
               <h2 
                 className="mb-4 home-hero-subtitle"
                 style={{ 
-                  background: `linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary))`,
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
+                  color: 'var(--text-primary)',
                 }}
               >
                 {personalInfo.title}
@@ -84,7 +81,7 @@ export const Home: React.FC = () => {
 
               <p 
                 className="max-w-2xl mx-auto lg:mx-0 text-xl home-hero-tagline"
-                style={{ color: 'var(--text-secondary)' }}
+                style={{ color: 'var(--text-primary)' }}
               >
                 {personalInfo.tagline}
               </p>
@@ -165,7 +162,7 @@ export const Home: React.FC = () => {
                 boxShadow: theme === 'night' ? 'var(--shadow-sm), 0 0 20px rgba(186, 148, 255, 0.3)' : 'var(--shadow-sm)',
               }}
             >
-              <Briefcase className="w-8 h-8" style={{ color: 'var(--bg-primary)' }} />
+              <Briefcase className="w-8 h-8" style={{ color: 'var(--text-primary)' }} />
             </div>
             <h3 className="mb-2" style={{ color: 'var(--text-primary)' }}>Projects</h3>
             <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>

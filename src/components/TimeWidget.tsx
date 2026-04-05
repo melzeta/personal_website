@@ -123,15 +123,15 @@ export const TimeWidget: React.FC<TimeWidgetProps> = ({ className = '' }) => {
           <div 
             className="text-3xl font-bold"
             style={{ 
-              color: 'var(--accent-tertiary)',
-              filter: theme === 'night' ? 'drop-shadow(0 0 4px rgba(186, 148, 255, 0.3))' : 'none',
+              color: 'var(--text-primary)',
+              filter: theme === 'night' ? 'drop-shadow(0 0 4px rgba(186, 148, 255, 0.22))' : 'none',
             }}
           >
             {formatTime(yourTime)}
           </div>
           <div 
             className="text-sm opacity-60"
-            style={{ color: 'var(--text-secondary)' }}
+            style={{ color: 'var(--text-primary)' }}
           >
             {getTimezoneAbbr()}
           </div>
