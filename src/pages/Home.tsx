@@ -10,7 +10,7 @@ export const Home: React.FC = () => {
   const navigate = useNavigate();
   const { playClick, playHover } = useSound();
   const { theme } = useTheme();
-  const profileImageSrc = 'profile_picture/profile.png';
+  const profileImageSrc = `${import.meta.env.BASE_URL}profile_picture/profile.png`;
 
   const handleNavigation = (path: string) => {
     playClick();
