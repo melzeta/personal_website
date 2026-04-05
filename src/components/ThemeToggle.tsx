@@ -23,7 +23,7 @@ export const ThemeToggle: React.FC = () => {
       aria-label="Toggle theme"
     >
       {theme === 'day' ? (
-        <Moon className="w-6 h-6" style={{ color: 'var(--accent-tertiary)' }} />
+        <Moon className="w-6 h-6" style={{ color: 'var(--text-primary)' }} />
       ) : (
         <Sun className="w-6 h-6 glow-pulse" style={{ color: 'var(--accent-secondary)' }} />
       )}
