@@ -111,9 +111,6 @@ export const Projects: React.FC = () => {
         </div>
 
         <div className="relative">
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-12 sm:w-20 z-10" style={{ background: 'linear-gradient(90deg, var(--bg-primary), transparent)' }} />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-12 sm:w-20 z-10" style={{ background: 'linear-gradient(270deg, var(--bg-primary), transparent)' }} />
-
           <div ref={emblaRef} className="overflow-hidden px-1 sm:px-8">
             <div className="flex">
               {projects.map((project, index) => {
