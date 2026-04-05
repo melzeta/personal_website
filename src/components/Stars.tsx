@@ -15,7 +15,7 @@ export const Stars: React.FC = () => {
 
   useEffect(() => {
     // Generate random stars for night mode
-    const newStars: Star[] = Array.from({ length: 30 }, (_, i) => ({
+    const newStars: Star[] = Array.from({ length: 100 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
@@ -38,7 +38,7 @@ export const Stars: React.FC = () => {
             top: `${star.y}%`,
             width: `${star.size}px`,
             height: `${star.size}px`,
-            backgroundColor: 'var(--accent-secondary)',
+            backgroundColor: 'gold',
             animationDelay: `${star.delay}s`,
           }}
         />
