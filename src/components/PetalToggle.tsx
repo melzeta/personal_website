@@ -6,6 +6,7 @@ import { useSound } from '../contexts/SoundContext';
 export const PetalToggle: React.FC = () => {
   const { petalsEnabled, togglePetals } = useBlossom();
   const { playToggle } = useSound();
+  const iconColor = petalsEnabled ? 'var(--accent-primary)' : 'var(--text-secondary)';
 
   const handleToggle = () => {
     playToggle();
@@ -26,12 +27,12 @@ export const PetalToggle: React.FC = () => {
       <span className="relative block w-6 h-6">
         <Flower2
           className="w-6 h-6"
-          style={{ color: petalsEnabled ? 'var(--accent-primary)' : 'var(--text-primary)' }}
+          style={{ color: iconColor }}
         />
         {!petalsEnabled && (
           <Slash
             className="w-6 h-6 absolute inset-0"
-            style={{ color: 'var(--text-primary)' }}
+            style={{ color: iconColor }}
           />
         )}
       </span>
