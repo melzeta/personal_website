@@ -85,8 +85,8 @@ export const personalInfo = {
   
   // CV File
   cvFile: {
-    path: `${import.meta.env.BASE_URL}professional_cv.pdf`,
-    filename: 'professional_cv.pdf',
+    path: `${import.meta.env.BASE_URL}curriculum/applied_ai_machine_learning_cv-1.pdf`,
+    filename: 'applied_ai_machine_learning_cv-1.pdf',
   },
   
   // Fun fact for skills page
