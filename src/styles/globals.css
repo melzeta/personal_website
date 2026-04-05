@@ -27,7 +27,7 @@
   
   body {
     background-color: var(--bg-primary);
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-family: 'VT323', monospace;
     font-size: 1.2rem;
     letter-spacing: 0.02em;
@@ -66,7 +66,7 @@
 
   p {
     font-family: 'VT323', monospace;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.15rem;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -142,10 +142,10 @@
 :root {
   --bg-primary: #f8efe2;
   --bg-secondary: #f1dfc7;
-  --bg-card: rgba(253, 243, 231, 0.85);
-  --card-bg: rgba(253, 243, 231, 0.85);
+  --bg-card: rgba(253, 243, 231, 0.7);
+  --card-bg: rgba(253, 243, 231, 0.7);
   --text-primary: #4a0d12;
-  --text-secondary: #2d0a0a;
+  --text-secondary: #7b2d23;
   --accent-primary: #981b1e;
   --accent-secondary: #c6942f;
   --accent-tertiary: #f3dca0;
@@ -161,10 +161,10 @@
 .dark {
   --bg-primary: #0e1a2f;
   --bg-secondary: #162543;
-  --bg-card: rgba(244, 233, 201, 0.85);
-  --card-bg: rgba(244, 233, 201, 0.85);
+  --bg-card: rgba(11, 24, 48, 0.74);
+  --card-bg: rgba(11, 24, 48, 0.74);
   --text-primary: #f9f3e3;
-  --text-secondary: #2d0a0a;
+  --text-secondary: #e2cf9b;
   --accent-primary: #f3e0a4;
   --accent-secondary: #d4a94a;
   --accent-tertiary: #f8f1cf;
