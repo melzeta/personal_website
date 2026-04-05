@@ -185,10 +185,7 @@ export const Contact: React.FC = () => {
                 <Download className="w-5 h-5" style={{ color: 'var(--bg-primary)' }} />
               </div>
               <div className="flex-1">
-                <h3 className="mb-1" style={{ color: 'var(--text-primary)' }}>Download CV</h3>
-                <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                  Download my professional CV.
-                </p>
+                <h3 className="mb-1" style={{ color: 'var(--text-primary)' }}>Download my CV! </h3>
               </div>
               <Heart className="w-5 h-5 mt-1" style={{ color: 'var(--accent-tertiary)' }} />
             </button>

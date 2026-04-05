@@ -4,7 +4,7 @@ export const personalInfo = {
   // Basic Info
   name: 'Melissa',
   title: 'Software and Machine Learning Engineer',
-  tagline: 'Building research-driven machine learning, XR, and full-stack systems with an interdisciplinary perspective.',
+  tagline: 'Building research-driven machine learning and full-stack systems with an interdisciplinary perspective.',
   emoji: '👋',
   
   // About Section
@@ -85,8 +85,8 @@ export const personalInfo = {
   
   // CV File
   cvFile: {
-    path: `${import.meta.env.BASE_URL}curriculum/applied_ai_machine_learning_cv-1.pdf`,
-    filename: 'applied_ai_machine_learning_cv-1.pdf',
+    path: `${import.meta.env.BASE_URL}professional_cv.pdf`,
+    filename: 'professional_cv.pdf',
   },
   
   // Fun fact for skills page
