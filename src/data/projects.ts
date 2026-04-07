@@ -44,4 +44,11 @@ export const projects: Project[] = [
     tech: ['Machine Learning', 'Data Analysis', 'Python', 'Engineering'],
     githubUrl: '',
   },
+  {
+    id: 6,
+    title: 'EmoAudio – Generative AI Emotional Transfer',
+    description: 'Built a generative AI pipeline using LLM-based emotion prompts and Audiocraft models to generate targeted audio outputs. Developed evaluation frameworks, applied statistical analysis, and built an interactive Streamlit dashboard to visualise performance metrics and support iterative model improvement.',
+    tech: ['Generative AI', 'Python', 'Machine Learning', 'Streamlit', 'LLMs', 'Data Analysis', 'Audiocraft'],
+    githubUrl: '',
+  },
 ];
